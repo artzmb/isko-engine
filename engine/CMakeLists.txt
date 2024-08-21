@@ -17,7 +17,7 @@ set(ENGINE_ALL_SOURCES
     ${ENGINE_PRIVATE_SOURCES}
 )
 
-add_library(${ENGINE_MODULE_NAME}
+add_library(${ENGINE_MODULE_NAME} SHARED
     ${ENGINE_ALL_SOURCES}
 )
 
@@ -27,4 +27,5 @@ source_group(TREE ${CMAKE_CURRENT_SOURCE_DIR} FILES
 
 target_include_directories(${ENGINE_MODULE_NAME} PUBLIC include)
 target_include_directories(${ENGINE_MODULE_NAME} PRIVATE src)
-target_compile_features(${ENGINE_MODULE_NAME} PUBLIC cxx_std_17)
+
+set_target_properties(${ENGINE_MODULE_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin/)

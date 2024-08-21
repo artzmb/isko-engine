@@ -1,5 +1,8 @@
 cmake_minimum_required(VERSION 3.28)
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_WINDOWS_EXPORT_ALL_SYMBOLS 1)
+
 set(PROJECT_NAME isko-engine)
 project(${PROJECT_NAME})
 

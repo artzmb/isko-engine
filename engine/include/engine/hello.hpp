@@ -5,6 +5,8 @@
 // https://opensource.org/licenses/MIT.
 // ---------------------------------------------------
 
+#pragma once
+
 #ifndef ISKO_ENGINE_HELLO_HPP
 #define ISKO_ENGINE_HELLO_HPP
 

@@ -12,7 +12,8 @@ namespace IskoEngine
 
 	void Hello()
 	{
-		std::cout << "Hello, world!" << std::endl;
+		std::cout << "Hello from IskoEngine!" << std::endl;
+		std::cin.get();
 	}
 
 }
